@@ -61,7 +61,7 @@ export function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-300 font-light">
-            Mechatronics &amp; AI Engineer
+            Mechatronics Engineer
             <span className="text-gray-500 mx-2">|</span>
             Bridging the gap between physical hardware and intelligent systems.
           </p>
@@ -120,7 +120,7 @@ export function Hero() {
               <span className="ml-3 text-xs font-mono text-gray-500">system_status.py</span>
             </div>
             <div className="space-y-2 font-mono text-sm">
-              <p><span className="text-cyanTech">engineer</span> <span className="text-gray-500">=</span> <span className="text-green-400">&quot;Mechatronics + AI&quot;</span></p>
+              <p><span className="text-cyanTech">engineer</span> <span className="text-gray-500">=</span> <span className="text-green-400">&quot;Mechatronics&quot;</span></p>
               <p><span className="text-cyanTech">university</span> <span className="text-gray-500">=</span> <span className="text-green-400">&quot;Ain Shams University&quot;</span></p>
               <p><span className="text-cyanTech">gpa</span> <span className="text-gray-500">=</span> <span className="text-amberMech">3.1</span></p>
               <p><span className="text-cyanTech">status</span> <span className="text-gray-500">=</span> <span className="text-green-400">&quot;Available for opportunities&quot;</span></p>
@@ -129,7 +129,7 @@ export function Hero() {
               <p className="pl-4 text-green-400">&quot;Robotics &amp; ROS&quot;,</p>
               <p className="pl-4 text-green-400">&quot;Industrial IoT&quot;,</p>
               <p className="pl-4 text-green-400">&quot;Predictive Maintenance&quot;,</p>
-              <p className="pl-4 text-green-400">&quot;Computer Vision&quot;,</p>
+              <p className="pl-4 text-green-400">&quot;Mechanical Design&quot;,</p>
               <p>]</p>
               <p className="flex items-center gap-1 mt-2">
                 <span className="text-cyanTech animate-pulse">&#x25B6;</span>
