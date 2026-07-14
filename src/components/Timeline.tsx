@@ -6,7 +6,7 @@ const timeline = [
     role: 'Mechatronics Engineer',
     org: 'Lotus-Power',
     period: 'Jun 2026 – Present',
-    type: 'Full-time',
+        type: 'Internship',
     accent: 'cyan',
     description: 'Research and technical analysis for smart beekeeping and farm management devices. Collaborating on IoT systems, PCB design, and electronic circuits for agricultural automation.',
   },
