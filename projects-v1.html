@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Bola Sameh</title>
+  <link rel="stylesheet" href="shared.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="index.html">
+          <div class="brand-mark"><span>BS</span></div>
+          <div>
+            <div>Bola Sameh</div>
+            <small style="color:#9ca3af">Mechatronics Engineer</small>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="section-head" data-fade>
+        <h2>Selected projects</h2>
+        <p>Case studies that connect mechanical hardware, control, IoT data flow, and machine learning.</p>
+      </section>
+      <section class="projects-grid" data-fade>
+        <article class="project-card">
+          <h3>Autonomous Mobile Manipulator Robot</h3>
+          <div class="project-meta">
+            <span>PID control</span><span>4 DOF arm</span><span>Computer vision</span><span>ESP32</span><span>MQTT</span><span>Node-RED</span>
+          </div>
+          <p>Designed and fabricated the mechanical hardware for an autonomous mobile base and 4 DOF robotic arm, then integrated control, vision, and IoT.</p>
+          <ul>
+            <li>Implemented PID closed-loop navigation with QR code detection and automated decisions.</li>
+            <li>Built an ESP-based IoT network for MQTT data flow and Node-RED dashboards.</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>Predictive Maintenance System</h3>
+          <div class="project-meta">
+            <span>Classification</span><span>SMOTE</span><span>Data pipelines</span><span>MLOps</span>
+          </div>
+          <p>Binary classification model predicting maintenance requirements within 7 days using temperature, vibration, and pressure telemetry.</p>
+          <ul>
+            <li>Engineered preprocessing and retraining pipelines to maintain ≥ 99% system uptime.</li>
+            <li>Targeted ≥ 90% accuracy to support practical maintenance decisions.</li>
+          </ul>
+        </article>
+      </section>
+      <section class="projects-grid" data-fade style="margin-top:2.5rem;">
+        <article class="project-card">
+          <h3>Air-Powered Vehicle</h3>
+          <div class="project-meta">
+            <span>MATLAB</span><span>ANSYS</span><span>ESP32</span><span>Pneumatics</span><span>TIG welding</span>
+          </div>
+          <p>Remotely controlled vehicle propelled solely by 10-bar compressed air, achieving 4th place out of 64 teams.</p>
+          <ul>
+            <li>Performed FEA via ANSYS to validate a lightweight chassis and 3-liter tank with safety factor of 2.</li>
+            <li>Developed an ESP32-based PCB to manage propulsion valves and braking servos with ~30 cm stop distance.</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>More work</h3>
+          <p>Additional robotics, IoT, and ML experiments can be added here as you publish them to GitHub or technical blogs.</p>
+          <ul>
+            <li>Robotics navigation experiments with ROS.</li>
+            <li>Visual inspection systems and real-time object detection pipelines.</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">Projects page tuned for recruiters and technical reviewers.</div>
+  </footer>
+  <script src="shared.js"></script>
+</body>
+</html>
