@@ -5,7 +5,7 @@ const categories = [
   {
     id: 'ml',
     title: 'Machine Learning & AI',
-    icon: '&#x1F9E0;',
+        icon: '🧠',
     glowColor: 'rgba(255,107,0,0.25)',
     borderHover: 'hover:border-amberMech',
     shadowHover: 'hover:shadow-[0_0_40px_rgba(255,107,0,0.25)]',
@@ -16,7 +16,7 @@ const categories = [
   {
     id: 'iot',
     title: 'IoT & Control Systems',
-    icon: '&#x1F4F6;',
+        icon: '📶',
     glowColor: 'rgba(0,210,255,0.25)',
     borderHover: 'hover:border-cyanTech',
     shadowHover: 'hover:shadow-[0_0_40px_rgba(0,210,255,0.25)]',
@@ -27,7 +27,7 @@ const categories = [
   {
     id: 'robotics',
     title: 'Robotics & CAD',
-    icon: '&#x1F916;',
+        icon: '🤖',
     glowColor: 'rgba(148,163,184,0.2)',
     borderHover: 'hover:border-slate-400',
     shadowHover: 'hover:shadow-[0_0_40px_rgba(148,163,184,0.2)]',
