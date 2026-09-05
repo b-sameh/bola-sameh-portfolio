@@ -52,19 +52,6 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            {/* Profile photo */}
-            <div className="mb-6">
-              <div className="relative inline-block">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyanTech/40 to-amberMech/40 blur-md scale-110" />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/bola-sameh-portfolio/pic.jpg"
-                  alt="Bola Sameh Dawoud"
-                  style={{ width: '96px', height: '96px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'center top', border: '2px solid rgba(0,210,255,0.5)', position: 'relative' }}
-                />
-              </div>
-            </div>
-
             <p className="text-xs font-mono uppercase tracking-[0.3em] text-amberMech/70 mb-4">
               Where Hardware Meets Intelligence
             </p>
@@ -101,6 +88,13 @@ export function Hero() {
               >
                 Let&apos;s Connect
               </a>
+              <a
+                href="/bola-sameh-portfolio/Summer-2026-CV.pdf"
+                download
+                className="px-6 py-3 rounded-lg border border-amberMech/40 text-amberMech text-sm hover:bg-amberMech/10 transition-colors"
+              >
+                ↓ Download CV
+              </a>
             </div>
 
             <div className="flex items-center gap-4">
@@ -112,42 +106,41 @@ export function Hero() {
             </div>
           </motion.div>
 
-          {/* Right: Visual card */}
+          {/* Right: Profile photo */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="relative hidden lg:block"
+            className="relative hidden lg:flex justify-center items-center"
           >
-            {/* Terminal-style card */}
-            <div className="rounded-2xl border border-white/10 bg-slate-900/80 backdrop-blur-sm overflow-hidden shadow-2xl">
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-white/5 bg-white/[0.02]">
-                <div className="h-2.5 w-2.5 rounded-full bg-red-500/70" />
-                <div className="h-2.5 w-2.5 rounded-full bg-yellow-500/70" />
-                <div className="h-2.5 w-2.5 rounded-full bg-green-500/70" />
-                <span className="ml-2 text-xs font-mono text-gray-600">system_status.py</span>
-              </div>
-              <div className="p-6 font-mono text-sm space-y-2">
-                <p><span className="text-purple-400">engineer</span> <span className="text-gray-500">=</span> <span className="text-green-400">&quot;Mechatronics&quot;</span></p>
-                <p><span className="text-purple-400">university</span> <span className="text-gray-500">=</span> <span className="text-green-400">&quot;Ain Shams University&quot;</span></p>
-                <p><span className="text-purple-400">gpa</span> <span className="text-gray-500">=</span> <span className="text-amberMech">3.1</span></p>
-                <p><span className="text-purple-400">status</span> <span className="text-gray-500">=</span> <span className="text-green-400">&quot;Available for opportunities&quot;</span></p>
-                <p className="text-gray-600 pt-2"># Specializations:</p>
-                <p><span className="text-purple-400">skills</span> <span className="text-gray-500">=</span> <span className="text-gray-400">[</span></p>
-                <p className="pl-4 text-green-400">&quot;Robotics &amp; ROS&quot;,</p>
-                <p className="pl-4 text-green-400">&quot;Industrial IoT&quot;,</p>
-                <p className="pl-4 text-green-400">&quot;Predictive Maintenance&quot;,</p>
-                <p className="pl-4 text-green-400">&quot;Mechanical Design&quot;,</p>
-                <p><span className="text-gray-400">]</span></p>
-                <p className="pt-2 text-cyanTech">▶ Running at full capacity...</p>
-              </div>
+            {/* Outer glow ring */}
+            <div className="absolute w-80 h-80 rounded-full bg-gradient-to-br from-cyanTech/20 to-amberMech/20 blur-2xl" />
+            {/* Rotating dashed ring */}
+            <div className="absolute w-72 h-72 rounded-full border border-dashed border-cyanTech/20 animate-spin" style={{ animationDuration: '20s' }} />
+            {/* Photo */}
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyanTech/50 to-amberMech/50 blur-lg scale-105" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/bola-sameh-portfolio/pic.jpg"
+                alt="Bola Sameh Dawoud"
+                style={{
+                  width: '240px',
+                  height: '240px',
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  objectPosition: 'center top',
+                  border: '3px solid rgba(0,210,255,0.4)',
+                  position: 'relative',
+                  display: 'block',
+                }}
+              />
             </div>
-
-            {/* Floating accent badges */}
-            <div className="absolute -top-3 -right-3 px-3 py-1 rounded-full border border-cyanTech/30 bg-slateBg text-xs font-mono text-cyanTech">
+            {/* Floating badges */}
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full border border-cyanTech/30 bg-slateBg/80 text-xs font-mono text-cyanTech backdrop-blur-sm">
               Robotics
             </div>
-            <div className="absolute -bottom-3 -left-3 px-3 py-1 rounded-full border border-amberMech/30 bg-slateBg text-xs font-mono text-amberMech">
+            <div className="absolute bottom-4 left-4 px-3 py-1 rounded-full border border-amberMech/30 bg-slateBg/80 text-xs font-mono text-amberMech backdrop-blur-sm">
               IoT Systems
             </div>
           </motion.div>
