@@ -89,7 +89,7 @@ export function Hero() {
                 Let&apos;s Connect
               </a>
               <a
-                href="/bola-sameh-portfolio/Summer-2026-CV.pdf"
+                            href="/bola-sameh-portfolio/Summer%202026%20CV.pdf"
                 download
                 className="px-6 py-3 rounded-lg border border-amberMech/40 text-amberMech text-sm hover:bg-amberMech/10 transition-colors"
               >
