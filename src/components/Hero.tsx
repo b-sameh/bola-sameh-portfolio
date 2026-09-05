@@ -1,6 +1,5 @@
 'use client';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
-import Image from 'next/image';
 
 export function Hero() {
   const mouseX = useMotionValue(0);
@@ -57,13 +56,11 @@ export function Hero() {
             <div className="mb-6">
               <div className="relative inline-block">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyanTech/40 to-amberMech/40 blur-md scale-110" />
-                <Image
-                  src="/pic.jpg"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/bola-sameh-portfolio/pic.jpg"
                   alt="Bola Sameh Dawoud"
-                  width={100}
-                  height={100}
-                  className="relative rounded-full border-2 border-cyanTech/50 object-cover w-24 h-24"
-                  priority
+                  style={{ width: '96px', height: '96px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'center top', border: '2px solid rgba(0,210,255,0.5)', position: 'relative' }}
                 />
               </div>
             </div>
