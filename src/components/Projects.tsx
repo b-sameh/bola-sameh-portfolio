@@ -9,6 +9,7 @@ const projects = [
     subtitle: 'Mechatronics & IoT',
     accent: 'cyan',
     github: 'https://github.com/b-sameh',
+        image: '/bola-sameh-portfolio/Auto-mobile-robot.png',
     techTags: ['PID Control', '4 DOF Robotic Arm', 'Computer Vision', 'ESP32', 'MQTT', 'Node-RED'],
     description: 'Designed and fabricated a complete mechanical mobile base and 4 DOF robotic arm. Implemented PID control and Computer Vision for real-time QR code detection and automated decision-making, integrated via ESP32 MQTT and Node-RED cloud dashboards.',
     metrics: [{ label: 'DOF', value: '4' }, { label: 'Protocol', value: 'MQTT' }, { label: 'Vision', value: 'CV' }],
