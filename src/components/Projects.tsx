@@ -20,6 +20,7 @@ const projects = [
     subtitle: 'Machine Learning & MLOps',
     accent: 'amber',
     github: 'https://github.com/b-sameh',
+        image: '/bola-sameh-portfolio/Predective-maintenance.png',
     techTags: ['ML Classification', 'API Development', 'MLOps', 'SMOTE', 'Telemetry'],
     description: 'Developed a binary classification model predicting machine failure within a 7-day window using sensor telemetry (temperature, vibration, pressure). Maintained \u226599% uptime and \u226590% accuracy through robust pipelines and automated retraining.',
     metrics: [{ label: 'Accuracy', value: '90%+' }, { label: 'Uptime', value: '99%+' }, { label: 'Window', value: '7 days' }],
