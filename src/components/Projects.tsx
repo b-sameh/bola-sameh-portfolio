@@ -72,12 +72,12 @@ export function Projects() {
             />
 
             {project.image && (
-              <div className="w-full h-56 md:h-72 overflow-hidden border-b border-white/10">
+              <div className="w-full bg-black/30 flex items-center justify-center border-b border-white/10">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto max-h-[520px] object-contain"
                 />
               </div>
             )}
