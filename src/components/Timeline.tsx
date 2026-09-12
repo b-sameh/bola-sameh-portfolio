@@ -41,6 +41,14 @@ const timeline = [
     type: 'Internship',
     accent: 'amber',
     description: 'Diagnostic engineering, preventive maintenance, and electrical/mechanical troubleshooting for Mercedes-Benz passenger cars using official manufacturer procedures.',
+      images: [
+        '/bola-sameh-portfolio/MB1.jpeg',
+        '/bola-sameh-portfolio/MB2.jpeg',
+        '/bola-sameh-portfolio/MB3.jpeg',
+        '/bola-sameh-portfolio/MB4.jpeg',
+        '/bola-sameh-portfolio/MB5.jpeg',
+        '/bola-sameh-portfolio/MB6.jpeg',
+      ],
   },
   {
     role: 'ML Engineering Trainee',
