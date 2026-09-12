@@ -25,6 +25,14 @@ const timeline = [
     type: 'Internship',
     accent: 'amber',
     description: 'Preventive and corrective maintenance on specialized workshop tools and heavy industrial equipment. Technical diagnostics, troubleshooting, and calibration of automotive service equipment per industry safety standards and manufacturer specifications.',
+    images: [
+      '/bola-sameh-portfolio/smg1.jpeg',
+      '/bola-sameh-portfolio/smg2.jpeg',
+      '/bola-sameh-portfolio/smg3.jpeg',
+      '/bola-sameh-portfolio/smg4.jpeg',
+      '/bola-sameh-portfolio/smg5.jpeg',
+      '/bola-sameh-portfolio/smg6.jpeg',
+    ],
   },
   {
     role: 'Workshop Engineer Intern',
@@ -62,65 +70,85 @@ const timeline = [
 
 export function Timeline() {
   return (
-    <section id="experience" className="relative py-24 px-6 lg:px-8 overflow-hidden">
-      <div className="mx-auto max-w-4xl">
-        {/* Section header */}
-        <div className="mb-16">
-          <p className="text-xs font-mono uppercase tracking-[0.3em] text-amberMech/70 mb-3">// 004. experience</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white">Professional Journey</h2>
-          <p className="mt-4 text-gray-400 leading-relaxed max-w-xl">
-            A structured path from mechanical foundations to intelligent autonomous systems.
-          </p>
-        </div>
+    <section id="experience" className="relative py-24 px-6 md:px-12 lg:px-24">
+      {/* Section header */}
+      <div className="max-w-4xl mx-auto mb-16">
+        <div className="text-xs font-mono text-cyanTech mb-2">// 004. experience</div>
+        <h2 className="text-3xl md:text-4xl font-bold">Professional Journey</h2>
+        <p className="text-gray-400 mt-3 max-w-2xl">
+          A structured path from mechanical foundations to intelligent autonomous systems.
+        </p>
+      </div>
 
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-white/10" />
+      <div className="max-w-4xl mx-auto relative">
+        {/* Vertical line */}
+        <div className="absolute left-0 top-0 bottom-0 w-px bg-white/10" />
 
-          <div className="space-y-10">
-            {timeline.map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="relative pl-8"
-              >
-                {/* Node */}
-                <div
-                  className={`absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full border-2 ${
-                    item.accent === 'cyan'
-                      ? 'border-cyanTech bg-slateBg'
-                      : 'border-amberMech bg-slateBg'
-                  }`}
-                />
+        <div className="space-y-6">
+          {timeline.map((item, index) => (
+            <motion.div
+              key={`${item.role}-${item.org}`}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+              className="relative pl-8"
+            >
+              {/* Node */}
+              <div
+                className={`absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full border-2 ${
+                  item.accent === 'cyan'
+                    ? 'border-cyanTech bg-slateBg'
+                    : 'border-amberMech bg-slateBg'
+                }`}
+              />
 
-                {/* Card */}
-                <div className="rounded-xl border border-white/5 bg-white/[0.03] px-6 py-5 hover:border-white/10 transition-colors">
-                  <div className="flex flex-wrap items-start justify-between gap-2">
-                    <div>
-                      <h3 className="font-semibold text-white">{item.role}</h3>
-                      <p className={`text-sm font-mono ${
-                        item.accent === 'cyan' ? 'text-cyanTech' : 'text-amberMech'
-                      }`}>{item.org}</p>
-                    </div>
-                    <div className="flex items-center gap-2 flex-wrap justify-end">
-                      <span className="text-xs font-mono text-gray-500">{item.period}</span>
-                      <span className={`text-xs px-2 py-0.5 rounded-full border ${
-                        item.type === 'Internship'
-                          ? 'border-amberMech/30 text-amberMech'
-                          : item.type === 'Freelance'
-                          ? 'border-cyanTech/30 text-cyanTech'
-                          : 'border-purple-500/30 text-purple-400'
-                      }`}>{item.type}</span>
-                    </div>
+              {/* Card */}
+              <div className="rounded-xl border border-white/5 bg-white/[0.03] px-6 py-5 hover:border-white/10 transition-colors">
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <div>
+                    <h3 className="font-semibold text-white">{item.role}</h3>
+                    <p className={`text-sm font-mono ${
+                      item.accent === 'cyan' ? 'text-cyanTech' : 'text-amberMech'
+                    }`}>{item.org}</p>
                   </div>
-                  <p className="mt-3 text-sm text-gray-400 leading-relaxed">{item.description}</p>
+                  <div className="flex items-center gap-2 flex-wrap justify-end">
+                    <span className="text-xs font-mono text-gray-500">{item.period}</span>
+                    <span className={`text-xs px-2 py-0.5 rounded-full border ${
+                      item.type === 'Internship'
+                        ? 'border-amberMech/30 text-amberMech'
+                        : item.type === 'Freelance'
+                        ? 'border-cyanTech/30 text-cyanTech'
+                        : 'border-purple-500/30 text-purple-400'
+                    }`}>{item.type}</span>
+                  </div>
                 </div>
-              </motion.div>
-            ))}
-          </div>
+                <p className="mt-3 text-sm text-gray-400 leading-relaxed">{item.description}</p>
+
+                {/* Photo gallery */}
+                {item.images && item.images.length > 0 && (
+                  <div className="mt-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
+                    {item.images.map((src, i) => (
+                      <a
+                        key={src}
+                        href={src}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="block aspect-square overflow-hidden rounded-lg border border-white/10 hover:border-white/30 transition-colors"
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={src}
+                          alt={`${item.org} photo ${i + 1}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
